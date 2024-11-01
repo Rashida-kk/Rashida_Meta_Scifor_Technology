@@ -8,9 +8,9 @@ Original file is located at
 """
 
 import streamlit as st
-import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
+import yfinance as yf
 import plotly.graph_objs as go
 import plotly.express as px
 import requests
