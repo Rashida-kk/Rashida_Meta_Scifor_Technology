@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1femQnJn-Kh7X7XRM-AlBz-nRkEglIiAS
 """
 
-!pip install streamlit yfinance pandas matplotlib plotly textblob requests
+pip install streamlit yfinance pandas matplotlib plotly textblob requests
 
 import streamlit as st
 import yfinance as yf
