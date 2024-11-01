@@ -5,3 +5,4 @@ matplotlib
 plotly
 requests
 textblob
+yfinance==2.23
