@@ -10,7 +10,6 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 
-import yfinance as yf
 import matplotlib.pyplot as plt
 import plotly.graph_objs as go
 import plotly.express as px
@@ -24,6 +23,7 @@ stock_symbol = st.sidebar.text_input("Enter Stock Symbol", value="AAPL")
 start_date = st.sidebar.date_input("Start Date", value=pd.to_datetime("2019-01-01"))
 end_date = st.sidebar.date_input("End Date", value=pd.to_datetime("2024-01-01"))
 
+import yfinance as yf
 # Fetch data from Yahoo Finance
 stock_data = yf.Ticker(stock_symbol)
 df = stock_data.history(start=start_date, end=end_date)
