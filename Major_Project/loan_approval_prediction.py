@@ -32,6 +32,9 @@ print(df.describe())
 print(df.isnull().sum())
 
 df = df.drop("loan_id", axis=1)
+if 'loan_id' in df.columns:
+    df = df.drop("loan_id", axis=1)
+print(df.head())
 
 df.columns = df.columns.str.strip()        #Removes any leading or trailing whitespace
 
